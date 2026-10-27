@@ -30,7 +30,7 @@ Hak akses diperiksa **di sisi server** pada setiap halaman dan proses, bukan han
 app/            logika PHP (config, includes, admin, sales, teknisi)
 public/         halaman publik dan aset (css, js, img)
 database/       schema.sql
-uploads/        foto KTP, rumah, bukti kerja (tidak di-commit)
+uploads/        foto rumah, bukti kerja (tidak di-commit)
 docs/           proposal dan dokumentasi
 ```
 
