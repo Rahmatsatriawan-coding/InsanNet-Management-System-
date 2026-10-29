@@ -1,0 +1,47 @@
+:root {
+  --navy: #1e2b6a;
+  --blue: #2d3a8c;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-header {
+  background: var(--navy);
+}
+
+.app-body {
+  flex: 1;
+}
+
+.app-sidebar {
+  width: 220px;
+  background: #f4f5fa;
+  border-right: 1px solid #dfe2ee;
+}
+
+.app-sidebar .nav-link {
+  color: #333;
+  border-radius: 8px;
+}
+
+.app-sidebar .nav-link.active,
+.app-sidebar .nav-link:hover {
+  background: var(--blue);
+  color: #fff;
+}
+
+.app-footer {
+  background: #fff;
+  color: #666;
+}
+
+@media (max-width: 767.98px) {
+  .app-sidebar {
+    width: 150px;
+  }
+}
