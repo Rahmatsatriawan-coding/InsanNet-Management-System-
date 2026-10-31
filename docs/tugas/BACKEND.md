@@ -3,7 +3,7 @@
 Penilaian dari GitHub: tiap tugas = 1 issue, 1 branch `feat/be-...`, minimal 1 Pull Request ke `develop`, dengan commit kecil yang rutin.
 
 ## Minggu 1 (26–30 Okt): Persiapan
-- [ ] Pasang XAMPP (PHP 8+, MySQL), jalankan proyek di lokal
+- [ ] Pasang Laragon (PHP 8+, MySQL), jalankan proyek di lokal
 - [ ] Buat `.env` dan uji koneksi `app/config/database.php`
 - [ ] Kirim PR pertama
 
