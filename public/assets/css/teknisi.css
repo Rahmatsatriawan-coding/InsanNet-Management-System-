@@ -1,0 +1,21 @@
+.tugas {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #e3e6f0;
+  border-radius: 10px;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+}
+.tugas strong { display: block; }
+.tugas span.nama { color: #1f2437; }
+
+.badge-status {
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: .85rem;
+  font-weight: 700;
+}
+.badge-process { background: #e0e4f8; color: #2d3a8c; }
+.badge-pending { background: #fdf0cc; color: #8a6100; }
+.badge-completed { background: #dff2e6; color: #1b6b3a; }
