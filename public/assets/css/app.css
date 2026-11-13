@@ -41,3 +41,29 @@ body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; background
   .sidebar a { margin-bottom: 0; }
   .content { padding: 16px; }
 }
+
+/* Form */
+.form-label-sm { font-size: .85rem; color: #4a5068; margin-bottom: 4px; display: block; }
+.form-control { padding: 12px; border-radius: 8px; }
+
+.upload-box {
+  border: 2px dashed #a9aed0; border-radius: 10px;
+  padding: 26px; text-align: center; color: #5a6078;
+  margin-bottom: 12px; cursor: pointer;
+}
+
+.btn-primary { background: var(--blue); border-color: var(--blue); font-weight: 600; padding: 12px 24px; }
+.btn-primary:hover { background: var(--navy); border-color: var(--navy); }
+.btn-outline-primary { color: var(--blue); border-color: var(--blue); font-weight: 600; padding: 12px 24px; }
+.btn-outline-primary:hover { background: var(--blue); border-color: var(--blue); }
+
+/* Langkah status pengajuan */
+.steps { display: flex; gap: 8px; margin-top: 8px; }
+.steps span {
+  flex: 1; text-align: center; padding: 8px 4px;
+  background: #e8eaf5; border-radius: 6px; font-size: .85rem; color: #4a5068;
+}
+.steps span.active { background: var(--blue); color: #fff; }
+
+.panel-head { background: var(--navy); color: #fff; font-weight: 700; padding: 18px 22px; border-radius: 16px 16px 0 0; }
+.panel-body { background: #fff; padding: 20px 22px; border-radius: 0 0 16px 16px; border: 1px solid #e3e6f0; border-top: 0; }

@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  background: #e9ecf6;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: #1f2437;
+}
+
+.card-sales {
+  max-width: 680px;
+  margin: 40px auto;
+  background: #fff;
+  border: 1px solid #d5d9ee;
+  border-radius: 28px;
+  overflow: hidden;
+}
+
+.card-sales .head {
+  background: #1e2b6a;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.15rem;
+  padding: 22px 26px;
+}
+
+.card-sales .body { padding: 22px 26px 40px; }
+
+.lbl { font-size: .9rem; color: #4a5068; margin-bottom: 4px; display: block; }
+
+.card-sales .form-control {
+  height: 58px;
+  border: 1px solid #c9cde6;
+  border-radius: 10px;
+  margin-bottom: 14px;
+}
+
+.upload-box {
+  display: block;
+  border: 2px dashed #a9aed0;
+  border-radius: 10px;
+  padding: 28px 10px;
+  text-align: center;
+  color: #5a6078;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.btn-odp, .btn-kirim {
+  display: block;
+  width: 66%;
+  padding: 14px;
+  border-radius: 8px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.btn-odp { background: #fff; color: #2d3a8c; border: 1px solid #2d3a8c; }
+.btn-kirim { background: #2d3a8c; color: #fff; border: 1px solid #2d3a8c; }
+
+.steps { display: flex; gap: 8px; margin-top: 6px; }
+.steps span {
+  flex: 1;
+  text-align: center;
+  padding: 8px 4px;
+  background: #e8eaf5;
+  border-radius: 6px;
+  font-size: .9rem;
+  color: #4a5068;
+}
+.steps span.active { background: #2d3a8c; color: #fff; }
+
+@media (max-width: 767.98px) {
+  .card-sales { margin: 0; border-radius: 0; }
+  .btn-odp, .btn-kirim { width: 100%; }
+}
