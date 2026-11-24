@@ -93,3 +93,19 @@ body {
   color: #4a5068; text-decoration: none; font-size: .9rem;
 }
 .menu-sales a.active { background: #2d3a8c; color: #fff; }
+
+.kartu-angka {
+  border: 1px solid #e3e6f0;
+  border-radius: 12px;
+  padding: 16px 20px;
+  margin-bottom: 12px;
+}
+.kartu-angka .label { font-size: .85rem; color: #5a6078; }
+.kartu-angka .nilai { font-size: 1.8rem; font-weight: 700; }
+.nilai-hijau { color: #1b6b3a; }
+.nilai-biru { color: #2d3a8c; }
+
+.progress-box { margin: 8px 0 20px; }
+.progress-track { background: #e8eaf5; border-radius: 999px; height: 16px; overflow: hidden; }
+.progress-isi { background: #2d3a8c; height: 100%; border-radius: 999px; }
+.progress-ket { font-size: .85rem; color: #5a6078; margin-top: 6px; }
