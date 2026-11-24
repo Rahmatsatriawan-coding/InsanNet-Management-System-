@@ -13,7 +13,7 @@
   <!-- SIDEBAR (nanti dipecah ke templates/sidebar.php) -->
   <nav class="sidebar">
     <div class="brand">InsanNet</div>
-    <a href="dashboard.html" class="active">Dashboard</a>
+    <a href="dashboard.php" class="active">Dashboard</a>
     <a href="#">Pelanggan</a>
     <a href="#">Jadwal Pekerjaan</a>
     <a href="#">Tagihan</a>

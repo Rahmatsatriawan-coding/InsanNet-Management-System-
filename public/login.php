@@ -39,7 +39,7 @@
 
         <div class="d-flex justify-content-between mb-3">
           <label><input type="checkbox" name="remember" class="form-check-input"> Ingat saya</label>
-          <a href="lupa-sandi.html">Lupa kata sandi?</a>
+          <a href="lupa-sandi.php">Lupa kata sandi?</a>
         </div>
 
         <button type="submit" class="btn btn-primary w-100">Masuk</button>

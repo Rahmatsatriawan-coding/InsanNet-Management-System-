@@ -13,9 +13,9 @@
     <div class="body">
 
       <nav class="menu-sales">
-        <a href="dashboard.html" class="active">Dashboard</a>
-        <a href="registrasi.html">Registrasi</a>
-        <a href="pelanggan.html">Pelanggan Saya</a>
+        <a href="dashboard.php" class="active">Dashboard</a>
+        <a href="registrasi.php">Registrasi</a>
+        <a href="pelanggan.php">Pelanggan Saya</a>
       </nav>
 
       <div class="row g-3">
