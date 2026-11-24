@@ -1,3 +1,9 @@
+<?php
+require_once __DIR__ . '/../../app/includes/auth.php';
+require_role('teknisi');
+
+$namaUser = htmlspecialchars($_SESSION['user']['nama_lengkap'], ENT_QUOTES, 'UTF-8');
+?>
 <!DOCTYPE html>
 <html lang="id">
 <head>
