@@ -11,34 +11,49 @@
   <div class="card-sales">
     <div class="head">Sales: Registrasi Pelanggan</div>
     <div class="body">
-      <form method="POST" action="#" enctype="multipart/form-data">
+
+      <div id="pesan-sukses" class="alert alert-success d-none">Pelanggan berhasil didaftarkan.</div>
+      <div id="pesan-gagal" class="alert alert-danger d-none">Pendaftaran gagal. Periksa data lalu coba lagi.</div>
+
+      <form method="POST" action="../../app/pelanggan/simpan.php" enctype="multipart/form-data">
 
         <label for="nama" class="lbl">Nama pelanggan</label>
         <input type="text" id="nama" name="nama" class="form-control" required>
 
-        <label for="wa" class="lbl">Nomor WhatsApp</label>
-        <input type="tel" id="wa" name="whatsapp" class="form-control" required>
+        <label for="no_hp" class="lbl">Nomor HP</label>
+        <input type="tel" id="no_hp" name="no_hp" class="form-control" required>
+
+        <label for="alamat" class="lbl">Alamat</label>
+        <textarea id="alamat" name="alamat" class="form-control" style="height:100px" required></textarea>
+
+        <label for="id_paket" class="lbl">Paket</label>
+        <select id="id_paket" name="id_paket" class="form-select mb-3" required>
+          <option value="">Pilih paket</option>
+          <option value="1">Paket contoh 1</option>
+          <option value="2">Paket contoh 2</option>
+        </select>
+
+        <label for="id_odp" class="lbl">ODP</label>
+        <select id="id_odp" name="id_odp" class="form-select mb-3" required>
+          <option value="">Pilih ODP</option>
+          <option value="1">ODP contoh 1</option>
+          <option value="2">ODP contoh 2</option>
+        </select>
 
         <label class="upload-box">
           Unggah foto depan rumah
           <input type="file" name="foto_rumah" accept="image/*" hidden>
         </label>
 
-        <div class="upload-box">Titik lokasi rumah (peta)</div>
-
-        <button type="button" class="btn-odp">Cek ODP terdekat</button>
         <button type="submit" class="btn-kirim">Kirim pengajuan</button>
-
-        <span class="lbl">Status pengajuan</span>
-        <div class="steps">
-          <span class="active">Pengajuan</span>
-          <span>Disetujui</span>
-          <span>Penjadwalan</span>
-          <span>Aktif</span>
-        </div>
-
       </form>
     </div>
   </div>
+
+  <script>
+    const p = new URLSearchParams(location.search);
+    if (p.has('sukses')) document.getElementById('pesan-sukses').classList.remove('d-none');
+    if (p.has('gagal')) document.getElementById('pesan-gagal').classList.remove('d-none');
+  </script>
 </body>
 </html>
