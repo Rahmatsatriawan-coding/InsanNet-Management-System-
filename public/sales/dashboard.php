@@ -1,0 +1,58 @@
+<?php
+require_once __DIR__ . '/../../app/includes/auth.php';
+require_role('sales');
+
+$namaUser = htmlspecialchars($_SESSION['user']['nama_lengkap'], ENT_QUOTES, 'UTF-8');
+?>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard Sales - InsanNet</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/css/sales.css" rel="stylesheet">
+</head>
+<body>
+  <div class="card-sales wrap-lebar">
+    <div class="head">Sales: Dashboard</div>
+    <div class="body">
+
+      <nav class="menu-sales">
+        <a href="dashboard.php" class="active">Dashboard</a>
+        <a href="registrasi.php">Registrasi</a>
+        <a href="pelanggan.php">Pelanggan Saya</a>
+      </nav>
+
+      <div class="row g-3">
+        <div class="col-12 col-md-4">
+          <div class="kartu-angka">
+            <div class="label">Target bulan ini</div>
+            <div class="nilai">00</div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="kartu-angka">
+            <div class="label">Capaian bulan ini</div>
+            <div class="nilai nilai-hijau">00</div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="kartu-angka">
+            <div class="label">Persentase</div>
+            <div class="nilai nilai-biru">0%</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="progress-box">
+        <div class="progress-track">
+          <div class="progress-isi" style="width: 0%"></div>
+        </div>
+        <div class="progress-ket">Capaian terhadap target bulan ini</div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>

@@ -23,7 +23,7 @@
 
   <main class="auth-main">
     <div class="auth-box">
-      <a href="login.html">&larr; Kembali ke halaman masuk</a>
+      <a href="login.php">&larr; Kembali ke halaman masuk</a>
       <h2 class="mt-4">Lupa kata sandi?</h2>
       <p class="sub">Masukkan username atau email akunmu. Kami akan mengirim tautan untuk mengatur ulang kata sandi.</p>
 
